@@ -2,17 +2,16 @@
 //Fecha: 20/04/2023
 
 //Cifrado Cesar
-exports.handler = async (event, context) => {
 
-const function1 = async () => {
+/*const function1 = async () => {
   //const url = "https://desencriptador.com/"
-  const url = "/.netlify/functions/jokes";
+  const url = "/.netlify/functions/index";
   const jokeStream = await fetch(url);
 
   const jsonJoke = await jokeStream.json();
   const joke = jsonJoke.joke;
   return joke;
-};
+};*/
 
 $(document).ready(function() {
     $("#btn-encripta").click(function() { 
@@ -55,9 +54,4 @@ function cifradoCesar(texto, desplazamiento) {
     return resultado;
   }
 
-  return{
-    statusCode: 200,
-    body: JSON.stringify(jsonJoke)
-};
 
-}
