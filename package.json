@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "netlify-cli": "^15.0.0"
+  },
+  "name": "proyecto_cloud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mauricio1610/Proyecto_Cloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mauricio1610/Proyecto_Cloud/issues"
+  },
+  "homepage": "https://github.com/Mauricio1610/Proyecto_Cloud#readme",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
+}
