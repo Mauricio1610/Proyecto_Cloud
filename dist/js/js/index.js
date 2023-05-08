@@ -2,8 +2,9 @@
 //Fecha: 20/04/2023
 
 //Cifrado Cesar
+exports.handler = async (event, context) => {
 
-const getRandomDadJoke = async () => {
+const function1 = async () => {
   //const url = "https://desencriptador.com/"
   const url = "/.netlify/functions/jokes";
   const jokeStream = await fetch(url);
@@ -54,3 +55,9 @@ function cifradoCesar(texto, desplazamiento) {
     return resultado;
   }
 
+  return{
+    statusCode: 200,
+    body: JSON.stringify(jsonJoke)
+};
+
+}
