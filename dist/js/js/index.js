@@ -2,6 +2,17 @@
 //Fecha: 20/04/2023
 
 //Cifrado Cesar
+
+const getRandomDadJoke = async () => {
+  //const url = "https://desencriptador.com/"
+  const url = "/.netlify/functions/jokes";
+  const jokeStream = await fetch(url);
+
+  const jsonJoke = await jokeStream.json();
+  const joke = jsonJoke.joke;
+  return joke;
+};
+
 $(document).ready(function() {
     $("#btn-encripta").click(function() { 
       const texto = $("#user-input").val();
